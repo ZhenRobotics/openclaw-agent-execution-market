@@ -1,0 +1,89 @@
+{
+  "name": "@openclaw/agent-execution-market",
+  "version": "0.1.0",
+  "displayName": "OpenClaw Agent Execution Market",
+  "description": "The Intent Clearinghouse for Verifiable Agent Execution - A decentralized marketplace connecting user intents with autonomous agent solvers through cryptographically verifiable execution",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "openclaw-aem": "./bin/aem-cli.js",
+    "oc-aem": "./bin/aem-cli.js",
+    "aem": "./bin/aem-cli.js"
+  },
+  "files": [
+    "dist/",
+    "bin/",
+    "src/",
+    "docs/",
+    "examples/",
+    "schemas/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/server/index.ts",
+    "start": "node dist/server/index.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint src --ext .ts",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "cli": "tsx src/cli/index.ts",
+    "solver:start": "tsx src/solver/start.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "openclaw",
+    "agent-execution",
+    "intent-based",
+    "marketplace",
+    "verifiable-execution",
+    "solver-network",
+    "clearinghouse",
+    "ai-agents",
+    "decentralized",
+    "cryptographic-proof",
+    "agent-marketplace",
+    "intent-solver",
+    "web3-agents",
+    "autonomous-agents"
+  ],
+  "author": "justin",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ZhenRobotics/openclaw-agent-execution-market.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ZhenRobotics/openclaw-agent-execution-market/issues"
+  },
+  "homepage": "https://github.com/ZhenRobotics/openclaw-agent-execution-market#readme",
+  "dependencies": {
+    "@noble/curves": "^1.7.0",
+    "@noble/hashes": "^1.6.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "uuid": "^11.0.5",
+    "ws": "^8.18.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.10.5",
+    "@types/uuid": "^10.0.0",
+    "@types/ws": "^8.5.13",
+    "@typescript-eslint/eslint-plugin": "^8.24.0",
+    "@typescript-eslint/parser": "^8.24.0",
+    "eslint": "^9.18.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.4.2",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.21.0",
+    "typescript": "^5.7.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

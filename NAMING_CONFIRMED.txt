@@ -1,0 +1,84 @@
+========================================
+  项目命名方案 - 最终确认
+========================================
+
+日期: 2026-03-13
+状态: ✅ 已配置完成
+
+========================================
+  跨平台命名
+========================================
+
+npm      → openclaw-agent-execution-market
+GitHub   → openclaw-agent-execution-market
+ClawHub  → agent-execution-market
+本地目录  → openclaw-agent-execution-market ✅
+
+CLI 命令 → aem, openclaw-aem, oc-aem
+
+========================================
+  安装命令
+========================================
+
+npm install -g openclaw-agent-execution-market
+
+使用: aem --help
+
+========================================
+  发布链接
+========================================
+
+npm:    https://www.npmjs.com/package/openclaw-agent-execution-market
+GitHub: https://github.com/ZhenRobotics/openclaw-agent-execution-market
+
+========================================
+  配置文件
+========================================
+
+✅ package.json     - name: "openclaw-agent-execution-market"
+✅ clawhub.yaml     - name: "agent-execution-market"
+✅ .npmignore       - 已配置
+✅ scripts/publish.sh - 已创建并可执行
+
+========================================
+  构建状态
+========================================
+
+✅ 构建成功: npm run build
+✅ dist/ 已生成 (11 个 JS 文件)
+✅ 类型定义已生成
+
+========================================
+  下一步操作
+========================================
+
+1. 初始化 Git:
+   cd /home/justin/openclaw-agent-execution-market
+   git init
+   git add .
+   git commit -m "chore: initial release v0.1.0"
+
+2. 创建 GitHub 仓库:
+   访问: https://github.com/new
+   仓库名: openclaw-agent-execution-market
+
+3. 推送到 GitHub:
+   git remote add origin https://github.com/ZhenRobotics/openclaw-agent-execution-market.git
+   git push -u origin main
+
+4. 发布到 npm:
+   npm login
+   npm publish --access public
+
+5. 发布到 ClawHub:
+   使用 clawhub.yaml 配置文件
+
+========================================
+  快速发布（自动化）
+========================================
+
+./scripts/publish.sh patch
+
+========================================
+
+所有配置已完成，准备发布！ 🚀

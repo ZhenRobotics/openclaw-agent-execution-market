@@ -1,0 +1,105 @@
+# ClawHub Platform Configuration
+# This file defines how the package is displayed on ClawHub
+
+# Package Identity
+name: agent-execution-market
+display_name: "Agent Execution Market"
+tagline: "The Intent Clearinghouse for Verifiable Agent Execution"
+version: 0.1.0
+
+# Categorization
+category: infrastructure
+subcategory: marketplace
+
+# Description
+description: |
+  A decentralized marketplace that connects user intents with autonomous agent solvers
+  through cryptographically verifiable execution. Users express what they want, solvers
+  compete to deliver the best results, and the system ensures execution integrity through
+  verifiable proofs.
+
+# Features
+features:
+  - Intent-based execution model
+  - Competitive solver marketplace
+  - Cryptographic verification system
+  - Real-time WebSocket events
+  - RESTful API interface
+  - TypeScript SDK included
+  - CLI tools for management
+
+# Tags
+tags:
+  - agent-execution
+  - intent-based
+  - marketplace
+  - verifiable-execution
+  - solver-network
+  - clearinghouse
+  - ai-agents
+  - decentralized
+  - cryptographic-proof
+  - web3-agents
+  - autonomous-agents
+
+# External Links
+links:
+  npm: "https://www.npmjs.com/package/openclaw-agent-execution-market"
+  github: "https://github.com/ZhenRobotics/openclaw-agent-execution-market"
+  documentation: "https://github.com/ZhenRobotics/openclaw-agent-execution-market#readme"
+  issues: "https://github.com/ZhenRobotics/openclaw-agent-execution-market/issues"
+
+# Installation
+installation:
+  npm: "npm install -g openclaw-agent-execution-market"
+  pnpm: "pnpm add -g openclaw-agent-execution-market"
+  yarn: "yarn global add openclaw-agent-execution-market"
+
+# CLI Commands
+cli_commands:
+  - name: "aem"
+    description: "Primary CLI command"
+  - name: "openclaw-aem"
+    description: "Prefixed CLI command"
+  - name: "oc-aem"
+    description: "Short prefixed CLI command"
+
+# Technology Stack
+tech_stack:
+  - TypeScript
+  - Node.js
+  - Express.js
+  - WebSocket
+  - Ed25519 Cryptography
+  - SHA-256 Hashing
+
+# Requirements
+requirements:
+  node: ">=18.0.0"
+  npm: ">=9.0.0"
+
+# Author
+author:
+  name: "justin"
+  github: "ZhenRobotics"
+
+# License
+license: MIT
+
+# Ecosystem
+ecosystem: openclaw
+part_of: "OpenClaw Infrastructure"
+
+# Status
+status: stable
+maturity: beta
+last_updated: "2026-03-13"
+
+# Screenshots/Media (optional - add when available)
+# media:
+#   - type: screenshot
+#     url: "https://example.com/screenshot1.png"
+#     caption: "Intent submission flow"
+#   - type: screenshot
+#     url: "https://example.com/screenshot2.png"
+#     caption: "Solver dashboard"

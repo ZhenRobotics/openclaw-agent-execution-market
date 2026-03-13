@@ -1,0 +1,109 @@
+# Dependencies
+node_modules/
+package-lock.json
+pnpm-lock.yaml
+
+# Build outputs
+dist/
+build/
+out/
+*.tsbuildinfo
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS
+Thumbs.db
+
+# Testing
+coverage/
+.nyc_output/
+
+# Temporary files
+tmp/
+temp/
+.tmp/
+
+# Old project files (video generation project - to be removed)
+audio/
+remotion.config.ts
+优化完成总结.md
+ACTUAL_TEST_RESULTS.md
+ALIYUN_418_FIX_SUMMARY.md
+BACKGROUND_VIDEO_FEATURE.md
+BROWSER_TEST_CHECKLIST.md
+CLAWHUB-UPLOAD-GUIDE.md
+CLAWHUB_UPDATE_*.md
+CLAWHUB_UPLOAD_*.md
+CLI-BUG-SOLUTION.md
+CODE_STRUCTURE_REVIEW.md
+DELIVERY.md
+ENGLISH-VERSION-UPDATE.md
+FINAL_STEPS.md
+GITHUB_RELEASE_*.md
+INSTALLATION-TEST-REPORT.md
+INTEGRATION_COMPLETE.md
+MANUAL_NPM_PUBLISH.md
+MULTI_PROVIDER_SETUP.md
+NPM_PUBLISH_GUIDE.md
+OPENCLAW-CHAT-INTEGRATION-GUIDE.md
+OPENCLAW_AGENT_FIX.md
+OPTIMIZATION.md
+PROJECT_STATUS.md
+PROJECT_SUMMARY.md
+PROVIDER_IMPLEMENTATION_STATUS.md
+PUBLISH.md
+PUBLISHING-PLATFORMS.md
+PUBLISH_NOW.txt
+QUICKSTART.md
+QUICK_PUBLISH_STEPS.md
+RELEASE-v1.0.1.md
+RELEASE_CHECKLIST_*.md
+RELEASE_COMPLETE_GUIDE.md
+RELEASE_NOTES_*.md
+RELEASE_v*.md
+SKILL.md
+SKILL_REVIEW.md
+TEST-REPORT*.md
+TROUBLESHOOTING.md
+USER_ACCESS_TEST_PLAN.md
+USER_BACKGROUND_TEST_RESULT.md
+clawhub-upload-bilingual/
+openclaw-skill/
+zhenskill-*.txt
+zhenskill-*.md
+generate-for-openclaw.sh
+install.sh
+load-env.sh
+npm-publish-commands.sh
+publish-helper.sh
+publish-now.sh
+test-*.sh
+test-*.txt
+test-*.js
+verify-naming.sh
+clawhub.json
+
+# Keep only necessary documentation
+# NAMING_CONFIRMED.txt - keep
+# FINAL_NAMING_SETUP.md - keep
+# NAMING_CONFIGURATION.md - keep
+# PUBLISH_GUIDE.md - keep
+# PROJECT_MIGRATION.md - keep
+# IMPLEMENTATION_COMPLETE.md - keep

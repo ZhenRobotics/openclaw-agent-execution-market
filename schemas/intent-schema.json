@@ -1,0 +1,75 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Intent Schema",
+  "description": "Schema for intent submission in Agent Execution Market",
+  "type": "object",
+  "required": ["type", "params", "constraints"],
+  "properties": {
+    "type": {
+      "type": "string",
+      "description": "Intent type identifier",
+      "examples": [
+        "data-fetch",
+        "computation",
+        "defi-swap",
+        "cross-chain-transfer",
+        "ai-inference"
+      ]
+    },
+    "params": {
+      "type": "object",
+      "description": "Intent-specific parameters",
+      "additionalProperties": true
+    },
+    "constraints": {
+      "type": "object",
+      "required": ["maxFee", "deadline"],
+      "properties": {
+        "maxFee": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Maximum fee willing to pay"
+        },
+        "deadline": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Unix timestamp deadline"
+        },
+        "minReputation": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Minimum solver reputation required"
+        },
+        "preferredSolvers": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Preferred solver IDs"
+        },
+        "requireProof": {
+          "type": "boolean",
+          "description": "Require cryptographic execution proof"
+        }
+      }
+    }
+  },
+  "examples": [
+    {
+      "type": "data-fetch",
+      "params": {
+        "url": "https://api.example.com/data",
+        "method": "GET",
+        "headers": {
+          "Authorization": "Bearer TOKEN"
+        }
+      },
+      "constraints": {
+        "maxFee": 100,
+        "deadline": 1735689600000,
+        "minReputation": 0.7
+      }
+    }
+  ]
+}
